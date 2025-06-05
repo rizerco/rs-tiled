@@ -12,8 +12,8 @@ edition = "2018"
 include = ["src/**/*.rs", "README.md", "LICENSE", "CHANGELOG.md"]
 
 [features]
-default = ["zstd"]
-wasm = ["zstd/wasm"]
+default = []
+wasm = []
 world = ["regex", "serde", "serde_json", "serde_regex"]
 
 [lib]
@@ -35,7 +35,6 @@ path = "examples/ggez/main.rs"
 [dependencies]
 base64 = "0.22.1"
 xml-rs = "0.8.4"
-zstd = { version = "0.13.1", optional = true, default-features = false }
 flate2 = "1.0.28"
 serde = { version = "1.0.216", optional = true }
 serde_json = { version = "1.0.133", optional = true }
